@@ -40,3 +40,45 @@ body {
   background-color: white;
 }
 /*menuBar finish*/
+
+/*gallery beginning*/
+.gallery {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/gallery_image.jpg"); /*görsel üzerine geçiş efekti vermek*/
+
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery .web {
+  color: white;
+  font-family: calibri;
+  font-size: 30px;
+}
+.gallery a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.gallery a:hover {
+  color: #073f68;
+  background-color: white;
+  padding: 10px; /*üzerine geldiğinde geçiş*/
+}
+.web h4 {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+/*gallery finish*/
