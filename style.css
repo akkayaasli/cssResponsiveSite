@@ -112,3 +112,51 @@ body {
   color: white;
 }
 /*middle_field finish*/
+
+/*sub_field beginning*/
+
+.sub_field {
+  display: flex;
+  flex-wrap: wrap; /*sığmadığında alt satıra geçsin*/
+  width: 100%;
+  height: 40%;
+  background-color: #171717;
+  color: white;
+}
+.sub_field .content {
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+}
+.sub_field .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 40px;
+  border-top: 1px solid white;
+}
+.sub_field i {
+  margin: 20px;
+}
+.sub_field a {
+  color: white;
+}
+.social a:nth-child(1):hover {
+  color: blue;
+}
+.social a:nth-child(2):hover {
+  color: aqua;
+}
+.social a:nth-child(3):hover {
+  color: #e1595b;
+}
+.social a:nth-child(4):hover {
+  color: #d8090d;
+}
+.social a:nth-child(5):hover {
+  color: #26e03b;
+}
+/*sub_field finish*/
