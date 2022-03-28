@@ -40,6 +40,9 @@ body {
   color: #073f68;
   background-color: white;
 }
+.menu i {
+  display: none;
+}
 /*menuBar finish*/
 
 /*gallery beginning*/
@@ -160,3 +163,74 @@ body {
   color: #26e03b;
 }
 /*sub_field finish*/
+
+/*tablet beginning*/
+@media only screen and (max-width: 992px) {
+  .middle_field {
+    flex-wrap: wrap; /*taşan bir genişlik olursa aşağıya ekle*/
+  }
+  .middle {
+    width: 48%;
+  }
+  .middle img {
+    width: 30%;
+  }
+}
+/*tablet finish*/
+
+/*telephone beginning*/
+@media only screen and (max-width: 768px) {
+  /*menu_bar beginning*/
+
+  .menu_bar {
+    justify-content: space-between; /*2 köşeye hizala*/
+  }
+  .menu_bar .logo {
+    margin-left: 10%;
+  }
+  .menu_bar .menu {
+    margin-right: 10%;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 15%;
+    margin-top: 50%;
+  }
+  /*menu_bar finish*/
+
+  /*middle_field beginning*/
+  .middle {
+    width: 100%;
+  }
+  .middle .content {
+    flex-direction: row;
+  }
+  .content img,
+  h3,
+  p {
+    padding: 1%;
+  }
+  /*middle_field finish*/
+
+  /*sub_field beginning*/
+  .sub_field {
+    height: 80%;
+  }
+  .sub_field .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*sub_field finish*/
+}
+/*telephone finish*/
