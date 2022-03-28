@@ -3,6 +3,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center; /*body içinde tüm divleri ortaya alır.*/
 }
 /*menuBar beginning*/
 .menu_bar {
@@ -82,3 +83,32 @@ body {
   padding-bottom: 20px;
 }
 /*gallery finish*/
+
+/*middle_field beginning*/
+.middle_field {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+}
+.middle {
+  width: 22%;
+  border: 2px solid gray;
+  border-radius: 15px;
+  margin: 2% 0;
+  box-sizing: border-box; /*width: 22%;+border: 2px=24 değilde border: 2px i içer doğru vermemizi sağlıyor*/
+  background: linear-gradient(rgba(52, 64, 98, 0.8), rgba(52, 64, 98, 0.5));
+}
+.middle img {
+  width: 70%;
+}
+.middle .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+/*middle_field finish*/
